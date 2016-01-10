@@ -1,0 +1,26 @@
+
+<div class="jumbotron">
+    <p>Paste Your GitHub Repo URL Below to see the issue status:</p>
+
+    <div class="input-group input-group-lg">
+        <input type="text" class="form-control" ng-model="repoURL" placeholder="GitHub Repo URL" aria-describedby="sizing-addon1">
+           <span class="input-group-btn">
+        <button class="btn btn-default" type="button" ng-click="getRepoInfo()">Go!</button>
+      </span>
+    </div>
+
+</div>
+<p class="bg-primary" ng-if="!resultDone"><img src="load.gif" style="height: 35px;padding: 7px;"> Fetching Data From GitHub...</p>
+
+<div class="row marketing" ng-if="metaInfoVisible">
+    <h2><u>Repository:</u> {{metaInfo.name}} </h2>
+    <h4><u>Description:</u> {{metaInfo.description}}</h4>
+    <div class="col-lg-12">
+        <table class="table table-condensed">
+            <tr><td><b>Total Open Issues:</b></td><td>{{metaInfo.open_issues_count}}</td></tr>
+            <tr><td><b>Latest Issue (Last 24 Hour):</b></td><td>{{last24HoursIssuesCount}}</td></tr>
+            <tr><td><b>Latest Issue (Last 7 Days):</b></td><td>{{last7DaysIssuesCount}}</td></tr>
+            <tr><td><b>All Other Old Issue:</b></td><td>{{metaInfo.open_issues_count-(last24HoursIssuesCount+last7DaysIssuesCount)}}</td></tr>
+        </table>
+    </div>
+</div>
