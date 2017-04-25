@@ -2,7 +2,7 @@
 Github Explorer Built In javascript (AngularJS) To Visualize useful info about your repository
 
 
-#Technology Used
+#Tech Stack
 
  - AngularJS
  - ngResource
