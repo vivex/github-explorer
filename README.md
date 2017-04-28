@@ -5,6 +5,7 @@ Github Explorer Built In javascript (AngularJS) To Visualize useful info about y
 #Tech Stack
 
  - AngularJS
+ 
  - ngResource
 
 #Other Info
