@@ -1,6 +1,6 @@
 # github-explorer
 
-Github Explorer Built In javascript (AngularJS) To Visualize useful info about your repository
+Github Explorer Built In javascript (AngularJS) To Visualize useful info about your repository test
 
 
 #Tech Stack
